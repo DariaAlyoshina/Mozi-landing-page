@@ -10,11 +10,22 @@
 </head>
 
 <body class="main__body">
-    <!-- Header -->
-    @@include('./html/_header.html')
+    <div class="hero__wrapper">
+        <!-- Header -->
+        @@include('./html/_header.html')
+
+        <!-- Hero -->
+        @@include('./html/MainPage/_hero.html')
+    </div>
     
     <!-- Main Page -->
-    <main></main>
+    <main>
+        <!--Brands -->
+        @@include('./html/_brands.html')
+        <!-- Products -->
+        @@include('./html/MainPage/_products.html')
+
+    </main>
 
     <!-- Footer -->
     <!-- @@include('./html/_footer.html') -->

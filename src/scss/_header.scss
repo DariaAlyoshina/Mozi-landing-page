@@ -12,17 +12,30 @@ nav {
 }
 
 .logo {
-
+    img {
+        @media (max-width: $breakpoint992) {
+            max-width: 120px;
+        }
+    }
 }
     
 
 .menu {
     display: flex;
+    align-items: center;
     &__item {
         margin-left: 60px;
+        @media (max-width: $breakpoint992) {
+            margin-left: 30px;
+        }
+
         &:last-child {
             .menu__item-link {
                 color: $whiteColor;
+                @media (max-width: $breakpoint768) {
+                    background: none;
+                    padding: 0;
+                }
             }
         }
     }
@@ -32,6 +45,12 @@ nav {
         font-weight: normal;
         font-size: 18px;
         line-height: 24px;
+        @media (max-width: $breakpoint992) {
+            font-size: 16px;
+        }
+        @media (max-width: $breakpoint768) {
+            font-size: 22px;
+        }
         &:hover {
             color: #bf0830;
             transition: 0.3s all ease;
@@ -82,14 +101,14 @@ nav {
 
         &.active-burger {
             &:before {
-                background: $burgerActiveColor;
+                background: $whiteColor ;
                 transform: rotate(45deg);
                 transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
                 top: 8px;
             }
 
             &:after {
-                background: $burgerActiveColor;
+                background: $whiteColor;
                 transform: rotate(-45deg);
                 bottom: 10px;
                 transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
@@ -106,7 +125,7 @@ nav {
             position: absolute;
             height: 2px;
             width: 100%;
-            background: $burgerColor;
+            background: $redColor;
             transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
         }
 
@@ -123,7 +142,7 @@ nav {
             top: 9px;
             right: 0;
             width: 100%;
-            background: $burgerColor;
+            background: $redColor;
             height: 2px;
             transform: scale(1);
             transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
@@ -132,7 +151,8 @@ nav {
 
     // .menu__item
     .menu__item {
-        margin-top: 15px;
+        margin-top: 30px;
+        margin-left: 0;
     }
 
     // .menu__link

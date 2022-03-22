@@ -1,0 +1,101 @@
+
+.hero__wrapper{
+    background: linear-gradient(252.91deg, #E3E7F6 3.68%, rgba(227, 231, 246, 0) 97.82%);
+}
+
+.section {
+    &__hero {
+        padding: 129px 0 210px 0;
+        position: relative;
+        @media (max-width: $breakpoint1400) {
+             padding: 100px 0;
+        }
+        @media (max-width: $breakpoint992) {
+            padding: 50px 0 275px 0;
+       }
+        @media (max-width: $breakpoint480) {
+            padding: 35px 0 250px 0;
+            }
+        .hero__img{
+            position: absolute;
+            bottom: 0;
+            right: 75px;
+            @media (max-width: $breakpoint1400) {
+                max-width: 600px;
+                right: 0;
+            }
+            @media (max-width: $breakpoint992) {
+                max-width: 400px;  
+           }
+           @media (max-width: $breakpoint768) {
+            max-width: 320px;  
+       }
+        }
+    }
+}
+
+.hero {
+    display: flex;
+    &__item{
+        flex: 0 1 50%;
+        @media (max-width: $breakpoint992) {
+            flex: 1 1 100%;
+       }
+    }
+    &__item-title{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 62px;
+        color: $blueColor;
+        @media (max-width: $breakpoint992) {
+            font-size: 38px;
+            line-height: 48px;
+            text-align: center;
+        }
+        @media (max-width: $breakpoint768) {
+            font-size: 32px; 
+            line-height: 42px;
+       }
+    }
+    &__item-text{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 33px;
+        color: $grayColor;
+        margin-top: 32px;
+        @media (max-width: $breakpoint992) {
+            margin-top: 25px;
+            text-align: center;
+       }
+       @media (max-width: $breakpoint768) {
+           font-size: 18px;
+           line-height: 24px;
+        }
+    }
+    &__item-buttons{
+        margin-top: 20px;
+        @media (max-width: $breakpoint992) {
+            display: flex;
+            justify-content: center;
+       }
+       @media (max-width: $breakpoint480) {
+             flex-direction: column;
+              margin-top: 0;
+   }
+    }
+    &__btn{
+        margin-top: 20px;
+        @media (max-width: $breakpoint480) {
+            display: flex; 
+            justify-content: center;
+       }
+        &:last-child{
+            margin-left: 16px;
+            @media (max-width: $breakpoint480) {
+                margin-left: 0;  
+           }
+        }
+    }
+}
