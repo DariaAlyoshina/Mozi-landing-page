@@ -1,6 +1,6 @@
 // Custom scripts
 // Navbar
-
+//All Pages
 // Мобильное меню бургер
 function burgerMenu() {
     const burger = document.querySelector('.burger')
@@ -42,3 +42,42 @@ function burgerMenu() {
     }
   }
   window.addEventListener('scroll', fixedNav)
+
+  //Main Page Scripts
+  if(document.querySelector('.body__main')) {
+    const swiper = new Swiper('.swiper__innovation', {
+
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    
+      // Responsive breakpoints
+      breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 1.2,
+        spaceBetween: 20
+      },
+      // when window width is >= 480px
+      480: {
+        slidesPerView: 1.8,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 2.8,
+        spaceBetween: 20,
+      },
+      992: {
+        slidesPerView: 3.2,
+        spaceBetween: 30,
+      },
+      1000: {
+        slidesPerView: 4,
+        spaceBetween: 30,
+      },
+    }
+    });
+
+  }

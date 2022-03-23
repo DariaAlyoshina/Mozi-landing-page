@@ -5,11 +5,14 @@
 @import './header';
 @import './hero';
 @import './brands';
+@import './info';
 // @import './footer';
 
 // Sections or Pages SCSS-files imports
 @import './MainPage/products';
+@import './MainPage/innovation';
+
 
 
 // Libs
-// @import './libs/swiper';
+@import './libs/swiper';
