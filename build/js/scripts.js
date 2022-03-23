@@ -64,8 +64,8 @@ function burgerMenu() {
 
       // Navigation arrows
       navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.swiper__arrow-next',
+        prevEl: '.swiper__arrow-prev',
       },
     
       // Responsive breakpoints

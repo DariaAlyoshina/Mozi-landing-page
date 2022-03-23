@@ -1,4 +1,125 @@
 // Footer
-footer {
-    display: block;
+footer{
+    background-color: #0D123C;
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 55px;
+    @media (max-width: $breakpoint768) {
+        padding: 35px 0;
+        flex-wrap: wrap;
+    }
+    &__item{
+        flex: 0 1 50%;
+        @media (max-width: $breakpoint768) {
+           flex: 0 0 100%;
+        }
+    }
+    &__text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 27px;
+        color: $whiteColor;
+        margin-top: 25px;
+        max-width: 287px;
+        @media (max-width: $breakpoint768) {
+            max-width: 100%;
+         }
+    }
+    &__lists{
+        display: flex;
+        justify-content: space-between;
+        max-width: 455px;
+        margin-left: auto;
+        margin-bottom: 50px;
+        @media (max-width: $breakpoint768) {
+            max-width: 100%;
+            margin-left: 0;
+            margin-top: 25px;
+            margin-bottom: 35px;
+         }
+         @media (max-width: $breakpoint480) {
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+         }
+    }
+   
+    &__list-title{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 21px;
+        color: $whiteColor;
+        margin-bottom: 30px;
+    }
+    &__list-item{
+        margin-top: 20px;
+        @media (max-width: $breakpoint480) {
+            flex: 0 0 50%;
+            &:last-child{
+                margin-top: 35px;
+            }
+         }
+        
+    }
+    &__list-item--link{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: $whiteColor;
+
+        &:hover{
+            color: $redColor;
+            transition: 0.3s all ease;
+        }
+    }
+    &__social{
+        margin-top: 30px;
+        display: flex;
+        gap: 15px;
+    }
+    &__social-link{
+        &:hover{
+            path{
+                fill: $redColor;
+                transition: 0.3s all ease;
+            }
+        }
+    }
+}
+.footer{
+    &__copyright{
+        padding: 30px 0;
+        border-top: 1px solid rgba(197, 203, 226, 0.5);
+    }
+    &__copy{
+        display: flex;
+        justify-content: space-between;
+        @media (max-width: $breakpoint480) {
+            flex-direction: column;
+         }
+    }
+    &__copy-item{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: $whiteColor;
+        @media (max-width: $breakpoint480) {
+            &:last-child{
+                margin-top: 10px;
+            }
+         }
+        a{
+            text-decoration: underline;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            color: $whiteColor;
+        }
+    }
 }

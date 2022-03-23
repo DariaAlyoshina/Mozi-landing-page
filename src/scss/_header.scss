@@ -1,7 +1,19 @@
 // Header
 nav {
     overflow: hidden;
+    // padding: 24px 0;
 }
+
+// .fixed__nav{
+//     position: fixed;
+//     left: 0;
+//     right: 0;
+//     top: 0;
+//     background: white;
+//     z-index: 111;
+//     padding: 15px 0;
+//     transition: 0.3s all ease;
+// }
 
 .navbar {
     display: flex;
@@ -68,7 +80,7 @@ nav {
     // .menu
     .menu {
         position: fixed;
-        background: #131418;
+        background: #0D123C;
         left: 0;
         top: 0;
         height: 100vh;

@@ -30,13 +30,23 @@
 }
 
 .swiper{
+    &__arrows{
+        display: flex;
+        align-items: center;
+        @media (max-width: $breakpoint768) {
+            display: none;
+        }
+    }
     &__arrow{
         background: none;
+        display: flex;
     }
-    &__arrow-prev{
-
-    }
+   
     &__arrow-next{
         transform: rotate(180deg);
+        margin-left: 8px;
     }
+}
+.swiper-button-disabled{
+    opacity: 0.7;
 }
