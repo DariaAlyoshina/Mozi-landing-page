@@ -60,6 +60,42 @@
                 
             }
         }
+
+        &.section__hero-about{
+            padding-top: 189px;
+            padding-bottom: 212px;
+            @media (max-width: $breakpoint1400) {
+                padding: 100px 0;
+            }
+            @media (max-width: $breakpoint992) {
+                padding: 50px 0 395px 0;
+            }
+            @media (max-width: $breakpoint768) {
+                padding: 35px 0 300px 0;
+            }
+           
+            .hero__img{
+                right: 120px;
+                @media (max-width: $breakpoint1400) {
+                    max-width: 500px;
+                    right: 30px;
+                }
+                @media (max-width: $breakpoint992) {
+                    max-width: 400px;  
+                }
+                @media (max-width: $breakpoint768) {
+                    right: 0;
+                    max-width: 275px;
+                }
+            }
+
+            .hero__item{
+                max-width: 400px;
+                @media (max-width: $breakpoint992) {
+                    max-width: 100%;  
+                }
+            }
+        }
     }
 }
 
@@ -129,3 +165,4 @@
         }
     }
 }
+
