@@ -348,6 +348,10 @@ nav {
   background: #ffffff;
 }
 
+.section__info.section__info-about {
+  background: transparent;
+}
+
 .info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -521,7 +525,7 @@ footer {
 
 .section__pluses {
   padding-top: 65px;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
 }
 
 .pluses {
