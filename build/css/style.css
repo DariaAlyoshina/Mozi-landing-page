@@ -382,6 +382,24 @@ nav {
   margin-top: 30px;
 }
 
+.info__btn.info__btn-relative {
+  position: relative;
+}
+
+.info__btn.info__btn-relative:hover .path {
+  fill: #bf0830;
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+.info__btn.info__btn-relative .button__img {
+  position: absolute;
+  right: -60%;
+  bottom: -130%;
+  pointer-events: none;
+}
+
 footer {
   background-color: #0D123C;
 }
