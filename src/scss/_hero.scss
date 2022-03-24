@@ -123,6 +123,9 @@
             font-size: 32px; 
             line-height: 42px;
        }
+       span{
+           color: $redColor;
+       }
     }
     &__item-text{
         font-style: normal;
@@ -164,5 +167,14 @@
            }
         }
     }
+    .hero__career-btn{
+        @media (max-width: $breakpoint480) {
+            text-align: center;
+            margin-top: 10px;
+       }
+    
+    }
 }
+
+
 

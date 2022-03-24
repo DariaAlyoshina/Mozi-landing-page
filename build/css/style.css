@@ -286,6 +286,10 @@ nav {
   color: #1A2578;
 }
 
+.hero__item-title span {
+  color: #bf0830;
+}
+
 .hero__item-text {
   font-style: normal;
   font-weight: 400;
@@ -2162,6 +2166,11 @@ button.swiper-pagination-bullet {
 
   .hero__btn:last-child {
     margin-left: 0;
+  }
+
+  .hero .hero__career-btn {
+    text-align: center;
+    margin-top: 10px;
   }
 
   .info__btn.info__btn-relative {
