@@ -1927,6 +1927,10 @@ button.swiper-pagination-bullet {
     margin-top: 35px;
   }
 
+  .info__btn.info__btn-relative {
+    margin-bottom: 35px;
+  }
+
   .footer {
     padding: 35px 0;
     -ms-flex-wrap: wrap;
@@ -2158,6 +2162,14 @@ button.swiper-pagination-bullet {
 
   .hero__btn:last-child {
     margin-left: 0;
+  }
+
+  .info__btn.info__btn-relative {
+    margin-bottom: 0;
+  }
+
+  .info__btn.info__btn-relative .button__img {
+    display: none;
   }
 
   .footer__lists {

@@ -52,6 +52,13 @@
         margin-top: 30px;
         &.info__btn-relative{
             position: relative;
+            @media (max-width: $breakpoint768) {
+                margin-bottom: 35px;
+            }
+            @media (max-width: $breakpoint480) {
+                margin-bottom: 0;
+            }
+
             &:hover{
                 .path{
                     fill: $redColor;
@@ -63,6 +70,9 @@
                 right: -60%;
                 bottom: -130%;
                 pointer-events: none;
+                @media (max-width: $breakpoint480) {
+                    display: none;
+                }
             }
         }
     }
