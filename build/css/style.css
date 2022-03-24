@@ -588,6 +588,12 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   color: #3A3A3C;
+  display: flex;
+  align-items: center;
+}
+
+.pluses__item-title .plus__icon {
+  margin-right: 10px;
 }
 
 .pluses__item-text {

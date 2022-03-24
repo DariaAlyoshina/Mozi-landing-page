@@ -41,6 +41,11 @@
         display: flex;
         align-items: center;
         color: $darkColor;
+        display: flex;
+        align-items: center;
+        .plus__icon{
+            margin-right: 10px;
+        }
         @media (max-width: $breakpoint992) {
             font-size: 24px;
         }
