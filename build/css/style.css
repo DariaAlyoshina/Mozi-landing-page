@@ -1609,7 +1609,7 @@ button.swiper-pagination-bullet {
             justify-content: center;
   }
 
-  .info__item info__img {
+  .info__item .info__img {
     max-width: 100%;
     width: 100%;
     height: auto;
@@ -1698,8 +1698,9 @@ button.swiper-pagination-bullet {
     text-align: center;
   }
 
-  .info__item info__img {
+  .info__item .info__img {
     max-width: 450px;
+    margin-top: 35px;
   }
 
   .footer {
