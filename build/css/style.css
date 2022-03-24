@@ -147,6 +147,11 @@ body.locked {
   text-align: center;
 }
 
+.about__wrapper {
+  background: -o-linear-gradient(181.48deg, #E3E7F6 -52.27%, rgba(227, 231, 246, 0) 138.23%);
+  background: linear-gradient(268.52deg, #E3E7F6 -52.27%, rgba(227, 231, 246, 0) 138.23%);
+}
+
 @-webkit-keyframes fade {
   0% {
     opacity: 0;
@@ -512,6 +517,60 @@ footer {
 
 .question__btn {
   margin-top: 40px;
+}
+
+.section__pluses {
+  padding-top: 65px;
+  padding-bottom: 50px;
+}
+
+.pluses {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 36px;
+  margin-top: 80px;
+}
+
+.pluses__item {
+  padding: 40px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 0px 8px rgba(22, 23, 72, 0.07), 0px 25px 35px rgba(22, 23, 72, 0.05);
+          box-shadow: 0px 0px 8px rgba(22, 23, 72, 0.07), 0px 25px 35px rgba(22, 23, 72, 0.05);
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 345px;
+          flex: 1 0 345px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.pluses__item-title {
+  font-size: 28px;
+  line-height: 31px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #3A3A3C;
+}
+
+.pluses__item-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  color: #484C63;
+  margin-top: 32px;
 }
 
 .section__products {
@@ -1581,6 +1640,15 @@ button.swiper-pagination-bullet {
     right: 30px;
   }
 
+  .pluses {
+    margin-top: 50px;
+    gap: 30px;
+  }
+
+  .pluses__item {
+    padding: 30px;
+  }
+
   .products__item {
     margin-top: 50px;
   }
@@ -1715,6 +1783,18 @@ button.swiper-pagination-bullet {
     height: auto;
   }
 
+  .pluses__item {
+    padding: 30px;
+  }
+
+  .pluses__item-title {
+    font-size: 24px;
+  }
+
+  .pluses__item-text {
+    margin-top: 20px;
+  }
+
   .products__item-logo img {
     max-width: 150px;
   }
@@ -1846,6 +1926,10 @@ button.swiper-pagination-bullet {
     margin-left: 0;
     margin-top: 25px;
     margin-bottom: 35px;
+  }
+
+  .pluses {
+    gap: 20px;
   }
 
   .products {
@@ -2097,6 +2181,12 @@ button.swiper-pagination-bullet {
         -ms-flex-pack: center;
             justify-content: center;
     margin-top: 10px;
+  }
+
+  .pluses__item {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
   }
 
   .stats__item {
