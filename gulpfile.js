@@ -1,4 +1,4 @@
-let project_folder = 'build'
+let project_folder = 'docs'
 let source_folder = 'src'
 
 let path = {
