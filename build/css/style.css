@@ -2302,6 +2302,15 @@ button.swiper-pagination-bullet {
   .jobs__info-text {
     font-size: 18px;
   }
+
+  .contacts {
+    gap: 50px;
+  }
+
+  .contacts__places {
+    max-width: 100%;
+    margin-top: 0;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -2553,6 +2562,34 @@ button.swiper-pagination-bullet {
   .jobs__btn {
     padding: 10px 16px;
     font-size: 14px;
+  }
+
+  .contacts {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 0;
+  }
+
+  .contacts__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+  }
+
+  .contacts__form {
+    padding: 20px;
+  }
+
+  .contacts__form-label {
+    margin-bottom: 15px;
+  }
+
+  .contacts__form-textarea {
+    min-height: 75px;
+  }
+
+  .contacts__place {
+    margin-top: 35px;
   }
 }
 
