@@ -547,7 +547,8 @@ footer {
 
 .section__pluses {
   padding-top: 65px;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
+  background: #ffffff;
 }
 
 .pluses {
@@ -828,6 +829,60 @@ footer {
   max-width: 100%;
   width: 100%;
   height: auto;
+}
+
+.section__photos {
+  background: -o-linear-gradient(179.24deg, #E3E7F6 -55.5%, rgba(227, 231, 246, 0) 145.36%);
+  background: linear-gradient(270.76deg, #E3E7F6 -55.5%, rgba(227, 231, 246, 0) 145.36%);
+  padding: 58px 0;
+}
+
+.photos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  row-gap: 50px;
+}
+
+.photos__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 540px;
+          flex: 0 1 540px;
+}
+
+.photos__item:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.photos__item:last-child img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: auto;
+}
+
+.photos__item-text {
+  max-width: 322px;
+}
+
+.photos__item-text .section__title {
+  max-width: 150px;
+}
+
+.photos__item:first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /**
@@ -1697,6 +1752,18 @@ button.swiper-pagination-bullet {
   .product__item-content {
     padding: 30px 30px 0 30px;
   }
+
+  .photos__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 48%;
+            flex: 0 1 48%;
+  }
+
+  .photos__item img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -2015,6 +2082,38 @@ button.swiper-pagination-bullet {
 
   .stats__item-text {
     font-size: 18px;
+  }
+
+  .photos__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    margin-top: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .photos__item:nth-child(even) {
+    margin-left: auto;
+  }
+
+  .photos__item:nth-child(even) img {
+    margin-left: auto;
+  }
+
+  .photos__item img {
+    max-width: 75%;
+  }
+
+  .photos__item-text .section__title {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .photos__item-text {
+    max-width: 100%;
+    text-align: center;
   }
 }
 
