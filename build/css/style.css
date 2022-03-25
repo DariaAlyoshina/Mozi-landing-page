@@ -1008,6 +1008,79 @@ footer {
           flex: 0 1 35%;
 }
 
+.section__jobs {
+  padding: 60px 0;
+}
+
+.jobs {
+  margin-top: 100px;
+}
+
+.jobs__item {
+  margin-top: 30px;
+  -webkit-box-shadow: 0px 0px 8px rgba(22, 23, 72, 0.07), 0px 17px 35px rgba(22, 23, 72, 0.05);
+          box-shadow: 0px 0px 8px rgba(22, 23, 72, 0.07), 0px 17px 35px rgba(22, 23, 72, 0.05);
+  border-radius: 8px;
+  padding: 35px 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.jobs__title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 27px;
+  color: #484C63;
+}
+
+.jobs__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 24px;
+  gap: 20px;
+}
+
+.jobs__info-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.jobs__info-icon {
+  margin-right: 5px;
+}
+
+.jobs__info-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  color: #8F90A6;
+}
+
+.more__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 68px;
+}
+
 /**
  * Swiper 7.3.1
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -2046,6 +2119,23 @@ button.swiper-pagination-bullet {
     font-size: 32px;
     line-height: 130%;
   }
+
+  .jobs__item {
+    padding: 25px 35px;
+    margin-top: 20px;
+  }
+
+  .jobs__title {
+    font-size: 22px;
+  }
+
+  .jobs__info {
+    margin-top: 15px;
+  }
+
+  .jobs__info-text {
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -2276,6 +2366,27 @@ button.swiper-pagination-bullet {
   .recommendations__item-link {
     font-size: 16px;
     margin-top: 0;
+  }
+
+  .jobs {
+    margin-top: 50px;
+  }
+
+  .jobs__item {
+    padding: 15px 25px;
+  }
+
+  .jobs__title {
+    font-size: 20px;
+  }
+
+  .jobs__info-icon img {
+    width: 15px;
+  }
+
+  .jobs__btn {
+    padding: 10px 16px;
+    font-size: 14px;
   }
 }
 
@@ -2544,5 +2655,41 @@ button.swiper-pagination-bullet {
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
+  }
+
+  .jobs__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .jobs__title {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .jobs__info {
+    margin-top: 5px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0;
+  }
+
+  .jobs__btn {
+    margin-top: 10px;
+  }
+
+  .jobs__item-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
   }
 }
