@@ -13,7 +13,23 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    @media (max-width: $breakpoint992) {
+        padding: 35px;
+    }
+    @media (max-width: $breakpoint768) {
+        padding: 20px;
+    }
+    @media (max-width: 600px) {
+        flex-wrap: wrap;
+    }
+    &__item-img{
+        @media (max-width: $breakpoint480) {
+            img{
+                max-width: 75px;
+            }
+        }
+    }
+  
     &__item-title{
         font-style: normal;
         font-weight: 700;
@@ -23,11 +39,36 @@
         align-items: center;
         margin-left: 27px;
         color: $blueColor;
+        @media (max-width: $breakpoint992) {
+            font-size: 32px;
+            line-height: 130%;
+        }
+        @media (max-width: $breakpoint768) {
+            font-size: 24px;
+            margin-left: 15px;
+        }
+        @media (max-width: $breakpoint480) {
+            font-size: 20px;
+            margin-top: 15px;
+        }
+    }
+    &__item-subtitle{
+        img{
+            @media (max-width: $breakpoint768) {
+                max-width: 150px;
+            }
+            @media (max-width: $breakpoint480) {
+                max-width: 100px;
+            }
+        }
     }
     &__item-rating{
         display: flex;
         align-items: center;
         margin-top: 5px;
+        @media (max-width: $breakpoint768) {
+            margin-top: 0;
+        }
     }
     &__item-rating--num{
         font-style: normal;
@@ -38,10 +79,18 @@
         align-items: center;
         color: #000000;
         margin-right: 7px;
+        @media (max-width: $breakpoint768) {
+            font-size: 24px;
+        }
     }
     &__item-rating--stars{
         display: flex;
         gap: 6px;
+        img{
+            @media (max-width: $breakpoint768) {
+                width: 20px;
+            }
+        }
     }
     &__item-link{
         display: flex;
@@ -53,6 +102,10 @@
         text-decoration-line: underline;
         color: $grayColor;
         align-items: center;
+        @media (max-width: $breakpoint768) {
+            font-size: 16px;
+            margin-top: 0;
+        }
         svg{
             transform: rotate(-180deg);
             margin-left: 7px;
@@ -67,6 +120,13 @@
         display: flex;
         align-items: center;
         flex: 0 1 65%;
+        @media (max-width: 600px) {
+            flex: 0 1 100%;
+        }
+        @media (max-width: $breakpoint480) {
+            flex-direction: column;
+            text-align: center;
+        }
     }
 }
 
@@ -76,5 +136,9 @@
         flex-direction: column;
         align-items: flex-end;
         flex: 0 1 35%;
+        @media (max-width: 600px) {
+            flex: 0 1 100%;
+            margin-top: 15px;
+        }
     }
 }
