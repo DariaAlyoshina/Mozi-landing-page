@@ -526,6 +526,11 @@ footer {
   background: linear-gradient(342.12deg, #E3E7F6 -6.53%, rgba(227, 231, 246, 0) 87.81%);
 }
 
+.section__question.section__question-career .question {
+  max-width: 750px;
+  width: 100%;
+}
+
 .question {
   max-width: 600px;
   margin: 0 auto;
