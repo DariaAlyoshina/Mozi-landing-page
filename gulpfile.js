@@ -1,8 +1,8 @@
-let project_folder = 'build'
+let project_folder = 'docs'
 let source_folder = 'src'
 
 let path = {
-    build: {
+    docs: {
         html: project_folder + '/',
         css: project_folder + '/css/',
         js: project_folder + '/js/',
@@ -54,18 +54,18 @@ function browserSync(params) {
 function html() {
     return src(path.src.html)
         .pipe(fileinclude())
-        .pipe(dest(path.build.html))
+        .pipe(dest(path.docs.html))
         .pipe(browsersync.reload({ stream: true }))
 }
 
 // Images
 function images() {
-    return src(path.src.img).pipe(dest(path.build.img)).pipe(browsersync.stream())
+    return src(path.src.img).pipe(dest(path.docs.img)).pipe(browsersync.stream())
 }
 
 // Fonts
 function fonts() {
-    return src(path.src.fonts).pipe(dest(path.build.fonts)).pipe(browsersync.stream())
+    return src(path.src.fonts).pipe(dest(path.docs.fonts)).pipe(browsersync.stream())
 }
 
 // Images Compress
@@ -81,21 +81,21 @@ function img() {
                 }),
             ]),
         )
-        .pipe(dest(path.build.img))
+        .pipe(dest(path.docs.img))
 }
 
 // JavaScript
 function js() {
     return src(path.src.js)
         .pipe(fileinclude())
-        .pipe(dest(path.build.js))
+        .pipe(dest(path.docs.js))
         .pipe(uglify())
         .pipe(
             rename({
                 extname: '.min.js',
             }),
         )
-        .pipe(dest(path.build.js))
+        .pipe(dest(path.docs.js))
         .pipe(browsersync.stream())
 }
 
@@ -114,14 +114,14 @@ function css() {
                 overrideBrowserslist: ['last 5 versions'],
             }),
         )
-        .pipe(dest(path.build.css))
+        .pipe(dest(path.docs.css))
         .pipe(clean_css())
         .pipe(
             rename({
                 extname: '.min.css',
             }),
         )
-        .pipe(dest(path.build.css))
+        .pipe(dest(path.docs.css))
         .pipe(browsersync.stream())
 }
 
@@ -139,11 +139,11 @@ function clean(params) {
     return del(path.clean)
 }
 
-// let build = gulp.series(clean, gulp.parallel(html, js, css, images, fonts))
+// let docs = gulp.series(clean, gulp.parallel(html, js, css, images, fonts))
 
-// Without clean build
-let build = gulp.series(gulp.parallel(html, js, css, images, fonts))
-let watch = gulp.parallel(build, watchFiles, browserSync)
+// Without clean docs
+let docs = gulp.series(gulp.parallel(html, js, css, images, fonts))
+let watch = gulp.parallel(docs, watchFiles, browserSync)
 
 exports.img = img
 exports.images = images
@@ -151,6 +151,6 @@ exports.js = js
 exports.html = html
 exports.css = css
 exports.fonts = fonts
-exports.build = build
+exports.docs = docs
 exports.watch = watch
 exports.default = watch
