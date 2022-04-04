@@ -2794,10 +2794,6 @@ button.swiper-pagination-bullet {
             flex: 0 0 50%;
   }
 
-  .footer__list-item:last-child {
-    margin-top: 35px;
-  }
-
   .footer__copy {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

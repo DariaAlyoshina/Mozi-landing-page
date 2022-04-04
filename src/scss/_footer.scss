@@ -58,9 +58,9 @@ footer{
         margin-top: 20px;
         @media (max-width: $breakpoint480) {
             flex: 0 0 50%;
-            &:last-child{
-                margin-top: 35px;
-            }
+            // &:last-child{
+            //     margin-top: 35px;
+            // }
          }
         
     }
